@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="https://static.nowcoder.com/images/logo_87_87.png"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" th:href="@{/css/global.css}" />
+	<title>牛客网-首页</title>
+</head>
+<body>
+
+<!--<h1 th:text="${user.name}">11</h1>-->
+<form action="testModelAttribute" method="Post">
+	<input type="hidden" name="id" th:value="${user.id}"/>
+	name:<input type="text" name="name" th:value="${user.name}"/><br>
+	age:<input type="text" name="age" th:value="${user.age}"/><br>
+	<input type="submit" value="提交"/>
+
+</form>
+</body>
+</html>

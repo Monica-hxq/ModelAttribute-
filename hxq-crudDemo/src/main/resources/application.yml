@@ -1,0 +1,18 @@
+#jdbc相关配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cruddemo?characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: 
+    type: com.alibaba.druid.pool.DruidDataSource #连接池
+  thymeleaf:
+    cache: false
+
+#mybatis给package设置别名
+mybatis:
+  type-aliases-package: com.shengda.hxq.pojo
+  mapper-locations: classpath:mapper/*.xml #指定映射文件的位置
+
+
+
